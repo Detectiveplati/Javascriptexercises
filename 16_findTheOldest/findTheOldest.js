@@ -18,24 +18,24 @@ const findTheOldest = function (people) {
     return oldest;
 };
 
-// Solution 2 
+// // Solution 2 
 
-function getAge(birth, death) {
+// function getAge(birth, death) {
 
-    if (!death) {
-   return new Date().getFullYear() - birth;
-}
-    return death - birth;
-}
+//     if (!death) {
+//    return new Date().getFullYear() - birth;
+// }
+//     return death - birth;
+// }
 
-function findTheOldest(people) {
+// function findTheOldest(people) {
 
-return people.reduce ((oldest, currentPerson) => {
-    const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
-    const currentAge = getAge (currentPerson.yearOfBirth, currentPerson.yearOfDeath);
+// return people.reduce ((oldest, currentPerson) => {
+//     const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
+//     const currentAge = getAge (currentPerson.yearOfBirth, currentPerson.yearOfDeath);
 
-    return oldestAge < currentAge ? currentPerson : oldest;
-}); 
+//     return oldestAge < currentAge ? currentPerson : oldest;
+// }); 
 
 // Do not edit below this line
 module.exports = findTheOldest;
